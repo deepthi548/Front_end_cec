@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+            background-color:cyan;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        form{
+           margin: 300px;
+           padding: 200px;
+            background-color:coral;
+            font-family: monospace;
+            border:20px double white;
+        }
+        label{
+            color:rgb(229, 205, 255);
+            background-color:black;
+            font-family: serif;
+            font-weight: 800;
+            font-style: italic;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="forms.html" target="_blanks">forms</li></a>
+        <li><a href="./tables.html">tables</li></a> 
+    </ul>
+    </nav>
+    
+    <form action="submit" method="post">
+        <h1 style="text-align: center; color: blueviolet; background-color:gold; font-family: Arial, Helvetica, sans-serif;">Form Submision</h1>
+     <label for="name">Name:</label>
+     <input type="text" id="name" name="name" required /> <br><br>
+        
+
+
+     <label for="email">email:</label>
+     <input type="text" id="email" name="email" required/> 
+     <br><br>
+     
+        <label for="male">male:</label>
+        <input type="radio" name="gender" id="male"> 
+         <label for="female">female:</label>
+            <input type="radio"name="gender"id="female"><br>
+            <h3>terms and conditions</h3>
+            <input type="checkbox" name="terms" id="terms" required>I agree to the terms and conditions</label><br></br>
+            
+     <label for="department">department:</label>    
+        <select id="department" name="department">
+            <option value="ISE">ISE</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option><br></br></select><br><br>
+            <label class="pass" for="password">password:</label>
+        
+                <input 
+                type="password"
+                name="password"
+                id="password"
+                required>
+                /<br/><br/>
+                <label for="birthday">birthday :</label>    
+                <input type="date"name="birthday"id="birthday"required><br></br>
+                <textarea>Discription</textarea><br></br>
+                <label for="video">upload video></label>
+                <input type="file" name="video" id="video" accept="video/*" required><br></br>
+                <label for="pdf">upload pdf:</label>
+                <input
+                    type="file"
+                    name="pdf"
+                    id="pdf"
+                        accept="application/pdf"
+                        required><br></br>
+                <label for ="doc">upload doc:</label>
+                <input
+                    type="file"
+                    name="doc"
+                    id="doc"
+                    accept="application/docx"
+                    required><br></br>
+                    <label for="rating">give your rating:</label>
+                <input type="range"
+                 name="range"
+                  id="range" 
+                  min="0"
+                   max="100"
+                    required><br></br>
+                <label for="color">choose your color:</label>
+                <input type="color"
+                 name="color"
+                  id="color"
+                   required><br></br>
+                   <input type="submit" value="submit">
+                </html></label>
+        
+
+   </form>  
+</body>
+</html>
