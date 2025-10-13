@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <p id="demo"> this text will change</p>
+    <script>
+        const person ={
+            name: "alice",
+            age:25,
+            city:"bangalore",
+
+        };
+        for(let key in person)
+        {
+            console.log(key + ":",person[key]);
+        }
+        console.log(name,age,city)
+     document.getElementById("demo").innerText="hello " + name + " !you are " + age + " years old. ";
+
+        
+
+    </script>
+    
+</body>
+</html>
